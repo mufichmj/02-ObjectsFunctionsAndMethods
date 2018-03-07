@@ -221,7 +221,7 @@ def try_functions():
     bill.go_to(rg.Point(-50,50))
     bill.pen_down()
     bill.go_to(rg.Point(100,100))
-    
+
 
 
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
@@ -232,7 +232,7 @@ def try_functions():
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
     ###########################################################################
-    # TODO: 4. Implement and test this function, per its doc-string above.
+    # DONE: 4. Implement and test this function, per its doc-string above.
     #    (To test it, put a statement in   main   that calls this function.)
     #
     #    NOTE: This function requires
@@ -244,6 +244,21 @@ def try_functions():
 
 
 def try_methods_and_functions():
+
+    joel = rg.SimpleTurtle()
+    joel.pen = rg.Pen('blue',5)
+    joel.speed = 3
+    joel.backward(150)
+    joel.speed = 1
+    joel.draw_square(100)
+    joel.left(30)
+    joel.draw_square(100)
+    joel.speed = 5
+    joel.pen = rg.Pen('red',5)
+    joel.draw_square(50)
+    joel.right(15)
+    joel.draw_square(50)
+
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
     """
     Constructs a SimpleTurtle and sets its   pen  to a new rg.Pen

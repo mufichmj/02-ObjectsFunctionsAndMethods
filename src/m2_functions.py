@@ -3,12 +3,12 @@ Practice DEFINING and CALLING
      FUNCTIONS
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Mariah Mufich.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   Allow this module to use the  rosegraphics.py  module by marking the
 #     src
 #   folder in this project as a "Sources Root", as follows:
@@ -18,8 +18,9 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #
 ###############################################################################
 
+
 import rosegraphics as rg
-import random
+
 
 
 def main():
@@ -31,10 +32,8 @@ def main():
     # A TurtleWindow works "behind the scenes" to enable Turtle movement
     window = rg.TurtleWindow()
 
-    turtle1()
-    turtle3()
-    turtle2()
-    turtle2()
+
+    turtle4()
 
     window.close_on_mouse_click()
 
@@ -104,9 +103,20 @@ def turtle3():
     maja.end_fill()
 
 
+def turtle4():
+    mariah = rg.SimpleTurtle()
+    mariah.speed = 5
+    mariah.pen = rg.Pen('pink',5)
+
+    mariah.forward(100)
+    mariah.begin_fill()
+    mariah.draw_square(50)
+    mariah.end_fill()
+
+
 ###############################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)

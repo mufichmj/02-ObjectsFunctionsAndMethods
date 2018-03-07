@@ -32,7 +32,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 ###############################################################################
 
 import rosegraphics as rg
-
+import math
 
 
 def main():
@@ -44,14 +44,15 @@ def main():
 
 
 def print_math():
+
+    math.cos(pi)
     """ Prints some calculated values. """
 
     point1 = rg.Point(250,100)
-    point1.x = 300
+    point1.x = sin(pi)
     print(point1.x)
 
-import math
-    point1.y = math.cos(Pi)
+    point1.y = cos(Pi)
     print("The sine of PI is,")
     print(point1.y)
 

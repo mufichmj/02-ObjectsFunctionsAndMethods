@@ -196,15 +196,33 @@ def try_methods():
     ###########################################################################
 
 
-def try_functions(x1,y1,x2,y2):
+def try_functions():
 
     leah = rg.SimpleTurtle()
     leah.pen = rg.Pen('grey', 8)
     leah.speed = 5
     leah.pen_up()
-    leah.go_to(rg.Point(x1, y1))
+    leah.go_to(rg.Point(200, 100))
     leah.pen_down()
-    leah.go_to(rg.Point(x2, y2))
+    leah.go_to(rg.Point(300, 30))
+
+    lisa = rg.SimpleTurtle()
+    lisa.pen = rg.Pen('red',8)
+    lisa.speed = 5
+    lisa.pen_up()
+    lisa.go_to(rg.Point(100, 200))
+    lisa.pen_down()
+    lisa.go_to(rg.Point(0,0))
+
+    bill = rg.SimpleTurtle()
+    bill.pen = rg.Pen('pink',8)
+    bill.speed = 5
+    bill.pen_up()
+    bill.go_to(rg.Point(-50,50))
+    bill.pen_down()
+    bill.go_to(rg.Point(100,100))
+    
+
 
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
     """

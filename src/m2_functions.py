@@ -32,8 +32,11 @@ def main():
     # A TurtleWindow works "behind the scenes" to enable Turtle movement
     window = rg.TurtleWindow()
 
-
+    turtle5()
+    turtle1()
     turtle4()
+    turtle2()
+    turtle3()
 
     window.close_on_mouse_click()
 
@@ -114,6 +117,18 @@ def turtle4():
     mariah.end_fill()
 
 
+def turtle5():
+    michael = rg.SimpleTurtle()
+    michael.speed = 10
+    michael.pen = rg.Pen('blue',8)
+
+    michael.begin_fill()
+    michael.draw_circle(50)
+    michael.end_fill()
+
+
+
+
 ###############################################################################
 #
 # DONE: 3.
@@ -148,7 +163,7 @@ def turtle4():
 
 ###############################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
@@ -178,7 +193,7 @@ def turtle4():
 
 ###############################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
@@ -194,7 +209,7 @@ def turtle4():
 
 ###############################################################################
 #
-# TODO: 6.
+# DONE: 6.
 #   The previous two TODOs IMPLEMENTED a function (TO-DO 4)
 #   and TESTED that function (TO-DO 5).
 #

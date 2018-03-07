@@ -4,12 +4,12 @@ Demonstrates using (calling) FUNCTIONS and using (calling) METHODS:
   -- how they differ.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Mariah Mufich.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   READ this comment, ASKING QUESTIONS as needed to understand it.
 #
 # Part 1:  CONSTRUCTING objects, applying ** METHODS ** to them:
@@ -76,6 +76,8 @@ def main():
     """
     window = rg.TurtleWindow()
 
+    try_functions()
+    try_methods()
     jump_and_move_turtle(100, 50, 200, -100)
 
     turtle = rg.SimpleTurtle('square')
@@ -171,6 +173,13 @@ def turtle3():
 
 
 def try_methods():
+
+    kristina = rg.SimpleTurtle()
+    kristina.pen = rg.Pen('brown',5)
+    kristina.forward(150)
+    kristina.left(90)
+    kristina.forward(50)
+    kristina.backward(100)
     """
     Constructs a SimpleTurtle and sets its   pen   to a new rg.Pen
     that is 'brown' with thickness 5.
@@ -179,14 +188,24 @@ def try_methods():
       -- left       90 degrees
       -- forward    50 units
       -- backward  100 units
+    
     """
     ###########################################################################
-    # TODO: 3. Implement and test this function, per its doc-string above.
+    # DONE: 3. Implement and test this function, per its doc-string above.
     #     (To test it, put a statement in   main   that calls this function.)
     ###########################################################################
 
 
-def try_functions():
+def try_functions(x1,y1,x2,y2):
+
+    leah = rg.SimpleTurtle()
+    leah.pen = rg.Pen('grey', 8)
+    leah.speed = 5
+    leah.pen_up()
+    leah.go_to(rg.Point(x1, y1))
+    leah.pen_down()
+    leah.go_to(rg.Point(x2, y2))
+
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
     """
     Causes several SimpleTurtles to do the following:

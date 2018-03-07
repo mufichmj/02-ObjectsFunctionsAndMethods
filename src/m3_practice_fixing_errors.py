@@ -50,7 +50,8 @@ def print_math():
     point1.x = 300
     print(point1.x)
 
-    point1.y = 50
+import math
+    point1.y = math.cos(Pi)
     print("The sine of PI is,")
     print(point1.y)
 

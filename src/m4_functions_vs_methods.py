@@ -76,6 +76,7 @@ def main():
     """
     window = rg.TurtleWindow()
 
+    try_methods_and_functions()
     try_functions()
     try_methods()
     jump_and_move_turtle(100, 50, 200, -100)
@@ -255,26 +256,9 @@ def try_methods_and_functions():
     joel.draw_square(100)
     joel.speed = 5
     joel.pen = rg.Pen('red',5)
-    joel.draw_square(50)
-    joel.right(15)
-    joel.draw_square(50)
-    joel.right(15)
-    joel.draw_square(50)
-    joel.right(15)
-    joel.draw_square(50)
-    joel.right(15)
-    joel.draw_square(50)
-    joel.right(15)
-    joel.draw_square(50)
-    joel.right(15)
-    joel.draw_square(50)
-    joel.right(15)
-    joel.draw_square(50)
-    joel.right(15)
-    joel.draw_square(50)
-    joel.right(15)
-    joel.draw_square(50)
-    joel.right(15)
+    for k in range(10):
+        joel.draw_square(50)
+        joel.right(15)
     joel.speed = 100
     joel.pen = rg.Pen('red',35)
     for k in range(8):
@@ -284,7 +268,7 @@ def try_methods_and_functions():
     joel.backward(200)
     joel.draw_circle(30)
     joel.draw_square(50)
-    
+
 
 
 

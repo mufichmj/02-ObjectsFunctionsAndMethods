@@ -258,6 +258,35 @@ def try_methods_and_functions():
     joel.draw_square(50)
     joel.right(15)
     joel.draw_square(50)
+    joel.right(15)
+    joel.draw_square(50)
+    joel.right(15)
+    joel.draw_square(50)
+    joel.right(15)
+    joel.draw_square(50)
+    joel.right(15)
+    joel.draw_square(50)
+    joel.right(15)
+    joel.draw_square(50)
+    joel.right(15)
+    joel.draw_square(50)
+    joel.right(15)
+    joel.draw_square(50)
+    joel.right(15)
+    joel.draw_square(50)
+    joel.right(15)
+    joel.speed = 100
+    joel.pen = rg.Pen('red',35)
+    for k in range(8):
+        joel.draw_square(300)
+        joel.left(60)
+    joel.pen = rg.Pen('black',3)
+    joel.backward(200)
+    joel.draw_circle(30)
+    joel.draw_square(50)
+    
+
+
 
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
     """
